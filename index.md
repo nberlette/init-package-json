@@ -4,15 +4,38 @@ A node module to get your node module started.
 
 [![Build Status](https://secure.travis-ci.org/npm/init-package-json.svg)](http://travis-ci.org/npm/init-package-json)
 
-## Usage
+## Usage: *Command Line Interface*
 
-### Command Line
+#### 1. First, install *globally* to expose the binary
+
+```bash
+yarn global add init-package-json
+
+# or with npm
+npm i --global init-package-json
+```
+
+#### 2. Run the `npm-init` command
 
 ```bash
 npm-init
 ```
 
-### Javascript 
+#### Alias to `yarn-init` 
+
+If you use [yarn](https://yarnpkg.com) and don't like the idea of running `npm-init`, you're not alone. I found the most painless and quickest fix to be a simple addition to my `.bash_aliases` file:
+
+```bash
+echo "alias yarn-init='npm-init'" >> ~/.bash_aliases && source ~/.bash_aliases
+```
+
+> You can also use this alias to add flags or arguments to the command, giving you a nice shorthand option.
+
+---
+
+
+
+### Usage: *JavaScript or TypeScript install helper script*
 
 ```javascript
 var init = require('init-package-json')
