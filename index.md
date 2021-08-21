@@ -1,16 +1,10 @@
 <h1 align="center">📦  <code>init-package-json</code></h1>
 
-<h2 align="center"><small><sup><em>"A node module to get your node module started."</em><sup></small><br>
+<h2 align="center">
   
 [![Build Status][build-badge]][build-url] [![yarn add init-package-json][yarn-badge]][yarn-url] [![npm install init-package-json][npm-badge]][npm-url]
-</h2>
   
-[build-badge]: https://img.shields.io/travis/com/npm/init-package-json?label=BUILD&logo=travis-ci&logoColor=fff&style=for-the-badge
-[build-url]: http://travis-ci.org/npm/init-package-json
-[npm-badge]: https://img.shields.io/badge/npm%20install%20-%20init&dash;package&dash;json-red?style=for-the-badge&logo=npm
-[npm-url]: https://www.npmjs.com/package/init-package-json
-[yarn-badge]: https://img.shields.io/badge/yarn%20add-%20init&dash;package&dash;json-8dddff?style=for-the-badge&logo=yarn&labelColor=444
-[yarn-url]: https://www.yarnpkg.com/package/init-package-json
+</h2>
 
 ## Getting Started
 
@@ -75,3 +69,11 @@ echo "alias yarn-init='npm-init'" >> $HOME/.bash_aliases
 ---
 
 [MIT / ISC](https://nick.mit-license.org) © [**Nicholas Berlette**](https://nick.berlette.com) &middot; Original by **npm**: [`init-package-json`](/npm/init-package-json#readme)
+
+  
+[build-badge]: https://img.shields.io/travis/com/npm/init-package-json?label=BUILD&logo=travis-ci&logoColor=fff&style=for-the-badge
+[build-url]: http://travis-ci.org/npm/init-package-json
+[npm-badge]: https://img.shields.io/badge/npm%20install%20-%20init&dash;package&dash;json-red?style=for-the-badge&logo=npm
+[npm-url]: https://www.npmjs.com/package/init-package-json
+[yarn-badge]: https://img.shields.io/badge/yarn%20add-%20init&dash;package&dash;json-8dddff?style=for-the-badge&logo=yarn&labelColor=444
+[yarn-url]: https://www.yarnpkg.com/package/init-package-json
