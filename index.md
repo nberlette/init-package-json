@@ -1,37 +1,50 @@
-## Welcome to GitHub Pages
+# 📦  `init-package-json`
 
-You can use the [editor on GitHub](https://github.com/nberlette/init-package-json/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+A node module to get your node module started.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+[![Build Status](https://secure.travis-ci.org/npm/init-package-json.svg)](http://travis-ci.org/npm/init-package-json)
 
-### Markdown
+## Usage
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Command Line
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```bash
+npm-init
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### Javascript 
 
-### Jekyll Themes
+```javascript
+var init = require('init-package-json')
+var path = require('path')
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/nberlette/init-package-json/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+/** 
+ * Path to a PromZard module. If it's not found, one will be provided for you.
+ */
+var initFile = path.resolve(process.env.HOME, '.npm-init')
 
-### Support or Contact
+var dir = process.cwd()
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+/**
+ * Optional extra stuff that gets put into the PromZard module's context.
+ * In npm, this is the resolved config object.  Exposed as `config`:
+ */
+var configData = { some: 'extra stuff' }
+
+/**
+ * Any existing stuff from the `package.json` file is also exposed in the 
+ * module as the `package` object.  These vars are also exposed:
+ * 1. `filename` path to the `package.json` file
+ * 2. `basename` the tip of the package dir
+ * 3. `dirname` the parent of the package dir
+ */
+init(dir, initFile, configData, function (err, data) {
+  // the data's already been written to {dir}/package.json
+  // now you can do stuff with it
+})
+```
+
+## More Information
+
+> See [PromZard](https://github.com/npm/promzard) for details about what can go in the config file.
+
