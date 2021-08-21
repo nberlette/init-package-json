@@ -1,11 +1,7 @@
 <h1 align="center">📦  <code>init-package-json</code></h1>
 
-<h2 align="center">
+# [![Build Status][build-badge]][build-url] [![yarn add init-package-json][yarn-badge]][yarn-url] [![npm install init-package-json][npm-badge]][npm-url]
   
-[![Build Status][build-badge]][build-url] [![yarn add init-package-json][yarn-badge]][yarn-url] [![npm install init-package-json][npm-badge]][npm-url]
-  
-</h2>
-
 ## Getting Started
 
 ## Usage: JavaScript (or TypeScript) setup script  
